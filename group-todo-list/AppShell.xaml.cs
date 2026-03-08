@@ -1,10 +1,10 @@
-﻿namespace group_todo_list
-{
-    public partial class AppShell : Shell
+﻿    namespace group_todo_list
     {
-        public AppShell()
+        public partial class AppShell : Shell
         {
-            InitializeComponent();
+            public AppShell()
+            {
+                InitializeComponent();
+            }
         }
     }
-}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black"
+    x:Class="group_todo_list.Views.CompletedPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Completed">
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- ===== PASTE SHARED HEADER HERE ===== -->
+
+        <!-- Completed List -->
+        <ListView Grid.Row="1"
+                  x:Name="CompletedListView"
+                  BackgroundColor="Black"
+                  SeparatorColor="#444444"
+                  Margin="20,10,20,10">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Border
+                            Stroke="#999999"
+                            StrokeThickness="1"
+                            Background="#2a2a2a"
+                            Padding="10"
+                            Margin="0,4,0,4">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="5"/>
+                            </Border.StrokeShape>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <Label Grid.Column="0"
+                                       Text="{Binding .}"
+                                       TextColor="#d8d8d8"
+                                       FontSize="14"
+                                       VerticalOptions="Center"/>
+                                <Button Grid.Column="1"
+                                        Text="🗑"
+                                        FontSize="14"
+                                        BackgroundColor="Transparent"
+                                        TextColor="#888888"
+                                        WidthRequest="40"
+                                        x:Name="DeleteButton"/>
+                            </Grid>
+                        </Border>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- ===== PASTE SHARED FOOTER HERE ===== -->
+
+    </Grid>
+</ContentPage>

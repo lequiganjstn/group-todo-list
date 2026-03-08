@@ -62,6 +62,33 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Update="Views\EditToDoPage.xaml.cs">
+	    <DependentUpon>EditToDoPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\CompletedPage.xaml.cs">
+	    <DependentUpon>CompletedPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\EditCompletedPage.xaml.cs">
+	    <DependentUpon>EditCompletedPage.xaml</DependentUpon>
+	  </Compile>
+	  <Compile Update="Views\ProfilePage.xaml.cs">
+	    <DependentUpon>ProfilePage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\EditToDoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\CompletedPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\EditCompletedPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ProfilePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\SignInPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

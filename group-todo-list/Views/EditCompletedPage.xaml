@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black"
+    x:Class="group_todo_list.Views.EditCompletedPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Edit">
+    <Grid RowDefinitions="Auto,Auto,*,Auto">
+
+        <!-- ===== PASTE SHARED HEADER HERE ===== -->
+
+        <!-- Back label -->
+        <HorizontalStackLayout Grid.Row="1" Margin="15,5,0,5">
+            <Label Text="&lt; Completed"
+                   TextColor="#888888"
+                   FontSize="14"
+                   VerticalOptions="Center"/>
+        </HorizontalStackLayout>
+
+        <!-- Content -->
+        <VerticalStackLayout Grid.Row="2" Margin="20,10,20,10">
+            <Border
+                Stroke="#999999"
+                StrokeThickness="1"
+                Background="#d8d8d8"
+                Padding="3"
+                Margin="0,0,0,10">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="5"/>
+                </Border.StrokeShape>
+                <Entry x:Name="TitleEntry"
+                       Placeholder="Title"
+                       FontSize="12"
+                       TextColor="Black"
+                       PlaceholderColor="#555555"
+                       BackgroundColor="#d8d8d8"
+                       Keyboard="Text"/>
+            </Border>
+
+            <Label x:Name="DetailsLabel"
+                   Text="Details will show here"
+                   TextColor="#d8d8d8"
+                   FontSize="12"
+                   Margin="5,0,0,10"/>
+        </VerticalStackLayout>
+
+        <!-- Action Buttons -->
+        <VerticalStackLayout Grid.Row="3" Margin="20,0,20,40">
+            <Border
+                Stroke="#999999"
+                StrokeThickness="1"
+                Background="#767676"
+                Padding="3"
+                Margin="0,0,0,10">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25"/>
+                </Border.StrokeShape>
+                <Button Text="Update"
+                        FontSize="15"
+                        CornerRadius="25"
+                        BackgroundColor="#727272"
+                        TextColor="White"
+                        x:Name="UpdateButton"/>
+            </Border>
+
+            <Border
+                Stroke="#595959"
+                StrokeThickness="1"
+                Background="#595959"
+                Padding="3"
+                Margin="0,0,0,10">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25"/>
+                </Border.StrokeShape>
+                <Button Text="Incomplete"
+                        FontSize="15"
+                        CornerRadius="25"
+                        BackgroundColor="#595959"
+                        TextColor="White"
+                        x:Name="IncompleteButton"/>
+            </Border>
+
+            <Border
+                Stroke="#c97a7a"
+                StrokeThickness="1"
+                Background="#c97a7a"
+                Padding="3"
+                Margin="0,0,0,10">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25"/>
+                </Border.StrokeShape>
+                <Button Text="Delete"
+                        FontSize="15"
+                        CornerRadius="25"
+                        BackgroundColor="#c97a7a"
+                        TextColor="White"
+                        x:Name="DeleteButton"/>
+            </Border>
+        </VerticalStackLayout>
+
+        <!-- ===== PASTE SHARED FOOTER HERE ===== -->
+
+    </Grid>
+</ContentPage>

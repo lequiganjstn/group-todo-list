@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage BackgroundColor="Black"
+    x:Class="group_todo_list.Views.ProfilePage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Profile">
+    <Grid RowDefinitions="Auto,*,Auto">
+
+        <!-- ===== PASTE SHARED HEADER HERE ===== -->
+
+        <!-- Profile Content -->
+        <VerticalStackLayout Grid.Row="1"
+                             VerticalOptions="Center"
+                             HorizontalOptions="Center"
+                             Spacing="20">
+            <Image Source="logo"
+                   WidthRequest="200"
+                   HeightRequest="200"
+                   HorizontalOptions="Center"/>
+
+            <Border
+                Stroke="#999999"
+                StrokeThickness="1"
+                Background="#595959"
+                Padding="3"
+                Margin="60,0,60,0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="25"/>
+                </Border.StrokeShape>
+                <Button Text="Sign out"
+                        FontSize="15"
+                        CornerRadius="25"
+                        BackgroundColor="#595959"
+                        TextColor="White"
+                        x:Name="SignOutButton"/>
+            </Border>
+        </VerticalStackLayout>
+
+        <!-- ===== PASTE SHARED FOOTER HERE ===== -->
+
+    </Grid>
+</ContentPage>
