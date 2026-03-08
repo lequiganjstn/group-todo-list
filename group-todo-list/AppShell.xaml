@@ -5,7 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:group_todo_list"
     xmlns:views="clr-namespace:group_todo_list.Views"
-    Title="group_todo_list">
+    Title="group_todo_list"
+    Shell.BackgroundColor="#d0d0d0"
+    Shell.TitleColor="Black"
+    Shell.ForegroundColor="White">
 
     <ShellContent
         Title="Sign In"

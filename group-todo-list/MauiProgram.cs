@@ -13,6 +13,7 @@ namespace group_todo_list
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
+                    fonts.AddFont("TAN-Pearl-Regular.ttf", "TanPearl");
                 });
 
 #if DEBUG

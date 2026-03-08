@@ -7,20 +7,87 @@
 
 
     <VerticalStackLayout>
-        <Label
-            HorizontalOptions="Center"
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" />
 
         <Image Source="logo"
                WidthRequest="200"
                HeightRequest="200"
                Margin="0,150,0,0"/>
 
-        <Border
-            Margin="100,10,100,70"
-            
-            />
+        <Border 
+            Stroke="#999999"
+            StrokeThickness="1" 
+            Background="#d8d8d8"
+            Padding="3"
+            Margin="100,10,100,0">
+            <Border.StrokeShape>
+
+                <RoundRectangle CornerRadius="5"/>
+
+            </Border.StrokeShape>
+            <Entry Placeholder="Email Address"
+                   FontSize="12"
+                   TextColor="Black"
+                   PlaceholderColor="#555555"
+                   BackgroundColor="#d8d8d8"/>
+
+        </Border>
+
+        <Border 
+            Stroke="#999999"
+            StrokeThickness="1" 
+            Background="#d8d8d8"
+            Padding="3"
+            Margin="100,10,100,20">
+            <Border.StrokeShape>
+
+                <RoundRectangle CornerRadius="5"/>
+
+            </Border.StrokeShape>
+            <Entry Placeholder="Password"
+                   FontSize="12"
+                   TextColor="Black"
+                   PlaceholderColor="#555555"
+                   BackgroundColor="#d8d8d8"/>
+
+        </Border>
+
+
+        <Border 
+            Stroke="#999999"
+            StrokeThickness="1  " 
+            Background="#767676"
+            Padding="3"
+            Margin="100,0,100,10">
+            <Border.StrokeShape>
+
+                <RoundRectangle CornerRadius="25"/>
+
+            </Border.StrokeShape>
+            <Button Text="Sign in"
+                    FontSize="15"
+                    FontFamily="PearlTan"
+                    CornerRadius="25"
+                    BackgroundColor="#727272"/>
+
+        </Border>
+
+        <Border 
+            Stroke="#999999"
+            StrokeThickness="1" 
+            Background="#5d5d5d"
+            Padding="3"
+            Margin="100,0,100,70">
+            <Border.StrokeShape>
+
+                <RoundRectangle CornerRadius="25"/>
+
+            </Border.StrokeShape>
+            <Button Text="Sign up"
+                    FontSize="15"
+                    CornerRadius="25"
+                    BackgroundColor="#595959"/>
+
+        </Border>
 
     </VerticalStackLayout>
 </ContentPage>
